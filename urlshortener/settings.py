@@ -76,7 +76,11 @@ WSGI_APPLICATION = 'urlshortener.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'urlshortener',
+        'NAME': 'your-db-name',
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+            'host': 'mongodb+srv://sid10on10:playerone@cluster1.mrhg20y.mongodb.net/'
+        }  
     }
 }
 
